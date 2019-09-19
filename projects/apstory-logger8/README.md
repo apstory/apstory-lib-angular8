@@ -11,7 +11,7 @@ To install this package run `npm i apstory-logger8`.
 Add the following to `app.module.ts`
 
 ```javascript
-import { ApstoryloggerModule, ApstoryloggerService } from 'apstorylogger-angular';
+import { ApstoryLogger8Module, ApstoryLogger8Service } from 'apstory-logger8';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,9 +24,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ApstoryloggerModule.forRoot('instrument key here')
+    ApstoryLogger8Module.forRoot('instrument key here'),
   ],
-  providers: [ApstoryloggerService],
+  providers: [ApstoryLogger8Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
