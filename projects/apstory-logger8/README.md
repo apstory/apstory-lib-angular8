@@ -4,7 +4,7 @@
 
 ## Installation
 
-To install this package run `npm i apstorylogger-angular`.
+To install this package run `npm i apstory-logger8`.
 
 ## Usage
 
@@ -40,3 +40,4 @@ Please contact Apstory on apstoryza@gmail.com if you have any questions.
 ## Microsoft Application Insights JavaScript SDK
 
 https://www.npmjs.com/package/applicationinsights-js
+
