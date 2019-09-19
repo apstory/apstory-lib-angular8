@@ -1,24 +1,42 @@
-# ApstoryLogger8
+[![Build status](https://apstory.visualstudio.com/ApStory/_apis/build/status/apstorymq-client-angular)](https://apstory.visualstudio.com/ApStory/_build/latest?definitionId=25)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+# Apstory Application Insights Logger
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project apstory-logger8` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project apstory-logger8`.
-> Note: Don't forget to add `--project apstory-logger8` or else it will be added to the default project in your `angular.json` file. 
+To install this package run `npm i apstorylogger-angular`.
 
-## Build
+## Usage
 
-Run `ng build apstory-logger8` to build the project. The build artifacts will be stored in the `dist/` directory.
+Add the following to `app.module.ts`
 
-## Publishing
+```javascript
+import { ApstoryloggerModule, ApstoryloggerService } from 'apstorylogger-angular';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
 
-After building your library with `ng build apstory-logger8`, go to the dist folder `cd dist/apstory-logger8` and run `npm publish`.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ApstoryloggerModule.forRoot('instrument key here')
+  ],
+  providers: [ApstoryloggerService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-## Running unit tests
+```
 
-Run `ng test apstory-logger8` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contact
 
-## Further help
+Please contact Apstory on apstoryza@gmail.com if you have any questions.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Microsoft Application Insights JavaScript SDK
+
+https://www.npmjs.com/package/applicationinsights-js
