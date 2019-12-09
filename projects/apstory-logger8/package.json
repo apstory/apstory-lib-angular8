@@ -1,6 +1,6 @@
 {
   "name": "apstory-logger8",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "peerDependencies": {
     "@angular/common": "^8.0.3",
     "@angular/core": "^8.0.3",
@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/applicationinsights-js": "^1.0.9"
   },
-  "keywords": ["angular", "applicationinsights-js", "application-insights", "angular-applicationinsights", "microsoft application insights javascript sdk", "typescript", "javascript-sdk"],
+  "keywords": ["angular", "applicationinsights-js", "application-insights", "angular-applicationinsights", "microsoft application insights javascript sdk", "typescript", "javascript-sdk", "ionic4", "capacitor", "ionic4-capacitor"],
   "author": "Anthony Plews",
   "license": "MIT",
   "homepage": "http://www.apstory.co.za",
