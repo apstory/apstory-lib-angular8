@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ApstoryLogger8Module.forRoot('instrument key here'),
+    ApstoryLogger8Module.forRoot('instrument key here', 'loggingLevelConsole'),
   ],
   providers: [ApstoryLogger8Service],
   bootstrap: [AppComponent]
